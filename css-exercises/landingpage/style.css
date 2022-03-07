@@ -1,0 +1,117 @@
+* {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+/* header */
+header{
+  display: flex;
+  background-color: #1F2937;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 4em;
+}
+
+header>.header {
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+header>ul {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+header li{
+  padding: 8px;
+  list-style-type: none;
+}
+
+header a {
+  font-size: 18px;
+  color: #E5E7EB;
+  
+}
+
+/* section1 */
+.section1 {
+  display: flex;
+  background-color: #1F2937;
+  padding: 3em 6em;
+}
+
+.section1-left {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #F9FAF8;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 18px;
+  color: #E5E7EB;
+  margin-bottom: 8px;
+}
+
+.large-img {
+  background-color: gray;
+  background-position:center;
+  background-size: contain;
+  min-width: 300px;
+  min-height: 50px;
+  max-height: 150px;
+  max-width: 450px;
+}
+
+button {
+  background-color: #3882F6;
+  width: 85px;
+  color: white;
+  border-radius: 5px;
+}
+
+/* section 2 */
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 8em;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+  margin-bottom: 1em;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item>img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+/* centring the item contents doesn't seem to be helping...*/
+
+/* section 3*/
+/* section 4 */
+/* footer */
+
+/*incomplete sections
