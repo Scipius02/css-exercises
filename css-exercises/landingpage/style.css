@@ -98,17 +98,21 @@ h2 {
 
 .item {
   display: flex;
+  flex-wrap:wrap;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .item>img {
   width: 100px;
   height: 100px;
   border-radius: 5px;
+  /*margin: auto;   /* for some reason forced to use this instead of justify-content on parent UPDATE works now if flex-wrap enabled */
 }
 
-/* centring the item contents doesn't seem to be helping...*/
+.item>.text {
+  text-align: center;   /* for some reason forced to use this instead of justify-content on parent */
+}
 
 /* section 3*/
 /* section 4 */
