@@ -52,7 +52,7 @@ h1 {
   margin-bottom: 0;
 }
 
-p {
+.section1 p {
   font-size: 18px;
   color: #E5E7EB;
   margin-bottom: 8px;
@@ -115,7 +115,29 @@ h2 {
 }
 
 /* section 3*/
+.section3 {
+  background-color: #E5E7EB;
+  display: flex;
+  padding: 8em;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 24px;
+  font-style: italic;
+  color: #1F2937;
+  font-weight:normal;
+}
+
+.attribution {
+  display: flex;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #1F2937;
+  align-self:flex-end;    /* since flex direction is column, align swaps to be horizontal plane */
+}
 /* section 4 */
+
 /* footer */
 
 /*incomplete sections
