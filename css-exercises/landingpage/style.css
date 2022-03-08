@@ -137,6 +137,34 @@ h3 {
   align-self:flex-end;    /* since flex direction is column, align swaps to be horizontal plane */
 }
 /* section 4 */
+.section4 {
+  padding: 4em 8em;
+}
+.banner {
+  background-color: #3882F6;
+  border-radius: 5px;
+  display: flex;
+  padding: 2em 3em;
+  justify-content: center;
+  gap: 4em;
+}
+
+.banner-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-header {
+  color: #F9FAF8;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.banner-text {
+  color: #E5E7EB;
+  font-size: 12px;
+}
 
 /* footer */
 
