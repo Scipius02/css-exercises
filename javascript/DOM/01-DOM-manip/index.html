@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Prettify</h1>
+    <button class="button" onclick="renderAll()">Render!</button>
+	  <script>
+      function renderAll() {
+        const body = document.querySelector('body');
+        const container = document.createElement('div');
+        container.classList.add('container');
+        body.appendChild(container);
+
+        const content = document.createElement('div');
+        content.classList.add('content');
+        content.textContent = "This is the glorious text-content!";
+        container.appendChild(content);
+
+        const redP = document.createElement('p');   // a <p> with red text that says “Hey I’m red!”
+        redP.classList.add('redP');
+        redP.textContent = "Hey I'm red!";
+        redP.setAttribute('style', 'color: red');
+        container.appendChild(redP);
+
+        const blueH3 = document.createElement('h3');   // an <h3> with blue text that says “I’m a blue h3!”
+        blueH3.classList.add('blueH3');
+        blueH3.textContent = "I'm a blue h3!";
+        blueH3.setAttribute('style', 'color: blue');
+        container.appendChild(blueH3);
+
+        const pinkContainer = document.createElement('div');    //a <div> with a black border and pink background color with the following elements inside of it: 
+        pinkContainer.classList.add('pinkContainer');
+        pinkContainer.setAttribute('style', 'background-color: pink; border-color: black; border-style: solid');
+        container.appendChild(pinkContainer);
+
+        const divH1 = document.createElement('h1');   // another <h1> that says “I’m in a div”
+        divH1.classList.add('divH1');
+        divH1.textContent = "I'm in a div";
+        pinkContainer.appendChild(divH1);
+
+        const pMeToo = document.createElement('p');   // a <p> that says “ME TOO!”
+        pMeToo.classList.add('divH1');
+        pMeToo.textContent = "ME TOO!";
+        pinkContainer.appendChild(pMeToo);
+          
+        const button = document.querySelector('button');
+        body.removeChild(button);
+      }
+    </script>
+  </body>
+</html>
